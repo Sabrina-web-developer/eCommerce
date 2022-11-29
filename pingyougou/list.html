@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>列表页-手机、数码、通信</title>
+		<meta name="description" content="品优购JD.com-专业的综合网上购物商城、销售家电、数码通讯、电脑、家居百货、服装服饰、
+		母婴、图书、食品等数万个品牌优质商品. 便捷、诚信的服务, 为您提供愉悦的网上购物体验!" />
+		<meta name="keywords" content="网上购物,网上商城,手机,笔记本,电脑,相机,数码,配件,手表,存储卡,品优购" />
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/list.css"/>
+	</head>
+	<body>
+		<!-- shortcut start -->
+		<div class="shortcut">
+			<div class="w">
+				<div class="shortcut-lf fl">
+					<ul>
+						<li>品优购欢迎您！</li>
+						<li>
+							<a class="log" href="#">请登录</a>
+							<a class="reg font-style" href="#">免费注册</a>
+						</li>
+					</ul>
+				</div>
+				<div class="shortcut-rt fr">
+					<ul class="shortcutnav">
+						<li><a href="">我的订单</a></li>
+						<li class="spacer"></li>
+						<li class="tab">
+							<a class="mydt" href="">我的品优购</a>
+							<i class="icomoon"></i>
+							<div class="dropdown-layer">
+								<div class="mylist1">
+									<div class="fore1">
+										<div class="item">待处理订单</div>
+										<div class="item">返修退换货</div>
+										<div class="item">降价商品</div>
+									</div>
+									<div class="fore2">
+										<div class="item">消息</div>
+										<div class="item">我的问答</div>
+										<div class="item">我的关注</div>
+									</div>
+								</div>
+								<div class="mylist2">
+									<div class="fore1">
+										<div class="item">我的京豆</div>
+										<div class="item">我的白条</div>
+									</div>
+									<div class="fore2">
+										<div class="item">我的优惠券</div>
+										<div class="item">我的理财</div>
+									</div>
+								</div>
+							</div>
+							
+						</li>
+						<li class="spacer"></li>
+						<li><a href="">品优购会员</a></li>
+						<li class="spacer"></li>
+						<li><a href="">企业采购</a></li>
+						<li class="spacer"></li>
+						<li class="tab">
+							<a class="mydt" href="">关注品优购</a>
+							<i class="icomoon"></i>
+							<div class="dropdown-layer ">
+								<div class="mylist1">
+									<div class="fore1">
+										<div class="item">热销产品</div>
+										<div class="item">最新产品</div>
+										<div class="item">降价商品</div>
+									</div>
+									<div class="fore2">
+										<div class="item">消息</div>
+										<div class="item">我的问答</div>
+										<div class="item">我的关注</div>
+									</div>
+								</div>
+						</li>
+						<li class="spacer"></li>
+						<li class="tab">
+							<a class="mydt" href="">客户服务</a>
+							<i class="icomoon"></i>
+							<div class="dropdown-layer">
+								<div class="mylist1">
+									<div class="fore1">
+										<div class="item">热销产品</div>
+										<div class="item">最新产品</div>
+										<div class="item">降价商品</div>
+									</div>
+									<div class="fore2">
+										<div class="item">消息</div>
+										<div class="item">我的问答</div>
+										<div class="item">我的关注</div>
+									</div>
+								</div>
+						</li>
+						
+						<li class="spacer"></li>
+						<li><a href="">网站导航</a></li>
+					</ul>
+					<script>
+						var nav = document.querySelector('.shortcutnav')
+						console.log(nav)
+						var lis = nav.children;
+						console.log(lis)
+						for(var i = 0; i < lis.length; i++){
+							lis[i].onmouseover = function(){
+								this.children[2].style.display = 'block';
+								this.style.backgroundColor = '#fff';
+							}
+							lis[i].onmouseout = function(){
+								this.children[2].style.display = 'none';
+								this.style.backgroundColor = '#f1f1f1';
+							}
+						}
+					</script>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- headr start -->
+		<div class="header w">
+			<a href="index.html">
+				<div class="logo" title="品优购">
+				<h1 class="title">品优购</h1>
+				</div>
+			</a>
+			<div class="seckill">
+				<img src="img/images/seckill.jpg" >
+			</div>
+			<div class="search">
+				<input type="text" value="请输入查询内容">
+				<button>搜素</button>
+			</div>
+			<div class="hotwords">
+				<ul>
+					<li class="font-style">优惠购首发</li>
+					<li>亿元优惠</li>
+					<li>9.9元团购</li>
+					<li>每满99减30</li>
+					<li>办公用品</li>
+					<li>电脑</li>
+					<li>通信</li>
+				</ul>
+			</div>
+			<div class="shopcart">
+				<i class=" cart "></i> 
+				我的购物车 
+				<i class=" arrow "></i>
+				<i class="count">8</i>
+			</div>
+		</div>
+		<!-- header end -->
+		<!-- nav start -->
+		<div class="nav w">
+			<div class="seckill_lt fl">
+				<ul>
+					<li><a href="#">品优秒杀</a></li>
+					<li><a href="#">即将售罄</a></li>
+					<li> <a href="#">超值低价</a></li>
+				</ul>
+			</div>
+			<div class="seckill_rt fl">
+				<ul>
+					<li><a href="" class="font-style">手机</a></li>
+					<li><a href="">京东通信</a></li>
+					<li><a href="">运营商</a></li>
+					<li><a href="">手机配件</a></li>
+					<li><a href="">摄影摄像</a></li>
+					<li><a href="">数码配件</a></li>
+					<li><a href="">时尚影音</a></li>
+					<li><a href="">智能设备</a></li>
+					<li><a href="">更多</a><i class="icomoon"></i></li>
+				</ul>
+			</div>
+		</div>
+		<!-- nav end -->
+		<!-- main start -->
+		<div class="maincont w">
+			<div class="maincont_hd">
+				<i class="icomoon"></i>
+				<img src="upload/images/maincont_hd.jpg" alt="">
+			</div>
+			<div class="maincont_bd clearfix">
+				<ul>
+					<li class="seckill_gds">
+						<a href="detail.html"><img src="upload/images/mobile_1.jpg" alt=""></a>
+						<h5 class="gds_title">Apple苹果iphone 6s Plus(A1699) 32G 金色 移动联通电信4G手机</h5>
+						<p class="price"><em>¥6088</em> <del>¥6088</del></p>
+						<div class="progress">
+							已售87%
+							<div class="progress_detail">
+								<div class="progress_detail_in"></div>
+							</div>
+							剩余<i>29</i>件
+						</div>
+						<a class="buy">立即抢购</a>
+					</li>
+					<li class="seckill_gds">
+						<img src="upload/images/mobile_1.jpg" alt="">
+						<h5 class="gds_title">Apple苹果iphone 6s Plus(A1699) 32G 金色 移动联通电信4G手机</h5>
+						<p class="price"><em>¥6088</em> <del>¥6088</del></p>
+						<div class="progress">
+							已售87%
+							<div class="progress_detail">
+								<div class="progress_detail_in"></div>
+							</div>
+							剩余<i>29</i>件
+						</div>
+						<a class="buy">立即抢购</a>
+					</li>
+					<li class="seckill_gds">
+						<img src="upload/images/mobile_1.jpg" alt="">
+						<h5 class="gds_title">Apple苹果iphone 6s Plus(A1699) 32G 金色 移动联通电信4G手机</h5>
+						<p class="price"><em>¥6088</em> <del>¥6088</del></p>
+						<div class="progress">
+							已售87%
+							<div class="progress_detail">
+								<div class="progress_detail_in"></div>
+							</div>
+							剩余<i>29</i>件
+						</div>
+						<a class="buy">立即抢购</a>
+					</li>
+					<li class="seckill_gds">
+						<img src="upload/images/mobile_1.jpg" alt="">
+						<h5 class="gds_title">Apple苹果iphone 6s Plus(A1699) 32G 金色 移动联通电信4G手机</h5>
+						<p class="price"><em>¥6088</em> <del>¥6088</del></p>
+						<div class="progress">
+							已售87%
+							<div class="progress_detail">
+								<div class="progress_detail_in"></div>
+							</div>
+							剩余<i>29</i>件
+						</div>
+						<a class="buy">立即抢购</a>
+					</li>
+					<li class="seckill_gds">
+						<img src="upload/images/mobile_1.jpg" alt="">
+						<h5 class="gds_title">Apple苹果iphone 6s Plus(A1699) 32G 金色 移动联通电信4G手机</h5>
+						<p class="price"><em>¥6088</em> <del>¥6088</del></p>
+						<div class="progress">
+							已售87%
+							<div class="progress_detail">
+								<div class="progress_detail_in"></div>
+							</div>
+							剩余<i>29</i>件
+						</div>
+						<a class="buy">立即抢购</a>
+					</li>
+					<li class="seckill_gds">
+						<img src="upload/images/mobile_1.jpg" alt="">
+						<h5 class="gds_title">Apple苹果iphone 6s Plus(A1699) 32G 金色 移动联通电信4G手机</h5>
+						<p class="price"><em>¥6088</em> <del>¥6088</del></p>
+						<div class="progress">
+							已售87%
+							<div class="progress_detail">
+								<div class="progress_detail_in"></div>
+							</div>
+							剩余<i>29</i>件
+						</div>
+						<a class="buy">立即抢购</a>
+					</li>
+					<li class="seckill_gds">
+						<img src="upload/images/mobile_1.jpg" alt="">
+						<h5 class="gds_title">Apple苹果iphone 6s Plus(A1699) 32G 金色 移动联通电信4G手机</h5>
+						<p class="price"><em>¥6088</em> <del>¥6088</del></p>
+						<div class="progress">
+							已售87%
+							<div class="progress_detail">
+								<div class="progress_detail_in"></div>
+							</div>
+							剩余<i>29</i>件
+						</div>
+						<a class="buy">立即抢购</a>
+					</li>
+					<li class="seckill_gds">
+						<img src="upload/images/mobile_1.jpg" alt="">
+						<h5 class="gds_title">Apple苹果iphone 6s Plus(A1699) 32G 金色 移动联通电信4G手机</h5>
+						<p class="price"><em>¥6088</em> <del>¥6088</del></p>
+						<div class="progress">
+							已售87%
+							<div class="progress_detail">
+								<div class="progress_detail_in"></div>
+							</div>
+							剩余<i>29</i>件
+						</div>
+						<a class="buy">立即抢购</a>
+					</li>
+				</ul>
+			</div>
+			<div class="page">
+				<span class="page_num">
+					<a class="page_prev" href="#">&lt &lt 上一页</a>
+					<a href="#">1</a>
+					<a class="current" href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">4</a>
+					<a href="#">5</a>
+					<a class="more" href="#">···</a>
+					<a class="page_next" href="#">下一页&gt &gt</a>
+				</span>
+				<span class="page_skip">
+					共10页
+					到第
+					<input type="text" />
+					页
+					<button>确定</button>
+				</span>
+				
+			</div>
+		</div>
+		<!-- main end -->
+		<!-- footer start -->
+		<div class="footer">
+			<div class="w">
+				<div class="footer_module_service">
+					<ul>
+						<li>
+							<i class="footer_module_authentic footer_module_commom" ></i>
+							<div class="footer_module_info">
+								<h5>正品保障</h5>
+								<p>正品保障, 提供发票</p>
+							</div>
+						</li>
+						<li>
+							<i class="footer_module_fast footer_module_commom" ></i>
+							<div class="footer_module_info">
+								<h5>极速物流</h5>
+								<p>急速物流, 急速送达</p>
+							</div>
+						</li>
+						<li>
+							<i class="footer_module_customer footer_module_commom" ></i>
+							<div class="footer_module_info">
+								<h5>售后服务</h5>
+								<p>7天无理由退货</p>
+							</div>
+						</li>
+						<li>
+							<i class="footer_module_specialserv footer_module_commom" ></i>
+							<div class="footer_module_info">
+								<h5>特色服务</h5>
+								<p>私人定制家电套餐</p>
+							</div>
+						</li>
+						<li>
+							<i class="footer_module_help footer_module_commom " ></i>
+							<div class="footer_module_info">
+								<h5>正品保障</h5>
+								<p>正品保障, 提供发票</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="footer_module_links">
+					<dl>
+						<dt>购物指南
+							<dd>购物流程</dd>
+							<dd>会员介绍</dd>
+							<dd>生活旅行/团购</dd>
+							<dd>常见问题</dd>
+							<dd>大家电</dd>
+							<dd>联系客服</dd>
+						</dt>
+					</dl>
+					<dl>
+						<dt>购物指南
+							<dd>购物流程</dd>
+							<dd>会员介绍</dd>
+							<dd>生活旅行/团购</dd>
+							<dd>常见问题</dd>
+							<dd>大家电</dd>
+							<dd>联系客服</dd>
+						</dt>
+					</dl>
+					<dl>
+						<dt>购物指南
+							<dd>购物流程</dd>
+							<dd>会员介绍</dd>
+							<dd>生活旅行/团购</dd>
+							<dd>常见问题</dd>
+							<dd>大家电</dd>
+							<dd>联系客服</dd>
+						</dt>
+					</dl>
+					<dl>
+						<dt>购物指南
+							<dd>购物流程</dd>
+							<dd>会员介绍</dd>
+							<dd>生活旅行/团购</dd>
+							<dd>常见问题</dd>
+							<dd>大家电</dd>
+							<dd>联系客服</dd>
+						</dt>
+					</dl>
+					<dl>
+						<dt>购物指南
+							<dd>购物流程</dd>
+							<dd>会员介绍</dd>
+							<dd>生活旅行/团购</dd>
+							<dd>常见问题</dd>
+							<dd>大家电</dd>
+							<dd>联系客服</dd>
+						</dt>
+					</dl>
+					<dl class="sqr_code">
+						<dt>帮助中心
+							<dd>
+								<img src="img/images/wx_cz.jpg" alt="">
+							</dd>
+							<p>品优购客户端</p>
+						</dt>
+					</dl>
+				</div>
+				<div class="module_copyright">
+					<p>
+						<a href="">关于我们|</a>
+						<a href="">联系我们|</a>
+						<a href="">联系客服|</a>
+						<a href="">商家入驻|</a>
+						<a href="">营销中心|</a>
+						<a href="">手机品优购|</a>
+						<a href="">友情链接|</a>
+						<a href="">销售联盟|</a>
+						<a href="">品优购社区|</a>
+						<a href="">手机品优购|</a>
+						<a href="">友情链接|</a>
+						<a href="">销售联盟|</a>
+						<a href="">品优购社区|</a>
+					</p>
+					<p>地址：上海市浦东新区南六公路399弄3号1002室 邮编：200202 电话：021-220916 
+					<br>沪ICP备08008421号 沪公安网备1100100881019</p>
+				</div>
+			
+			</div>
+			
+		</div>
+		<!-- footer end -->
+	</body>
+</html>
